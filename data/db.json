@@ -1,0 +1,1153 @@
+{
+  "receipts": [
+    {
+      "id": "d494242c-590a-4a7e-829d-b2232e070d6e",
+      "createdAt": "2025-12-30T20:37:17.897Z",
+      "purchasedAt": "2025-12-30T20:37:17.896Z",
+      "store": "Unknown store",
+      "currency": "CZK",
+      "totals": {
+        "subtotal": 261.5,
+        "discount": 0,
+        "discountItems": 0,
+        "discountReceipt": 0,
+        "total": 261.5,
+        "paymentMethod": null
+      },
+      "items": [
+        {
+          "id": "90cf8470-327c-4978-b22e-50664a33479a",
+          "rawName": "ART VODA NEPERL.1,5L",
+          "name": "ART VODA NEPERL.1,5L",
+          "category": "other",
+          "quantity": 6,
+          "unit": "pcs",
+          "unitPrice": 6.9,
+          "totalPrice": 41.4,
+          "discount": 0
+        },
+        {
+          "id": "31e616ab-d368-42fc-895f-d1832b629e66",
+          "rawName": "pilsl.urq.ležák 0,5L",
+          "name": "pilsl.urq.ležák 0,5L",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 25.9,
+          "totalPrice": 77.7,
+          "discount": 0
+        },
+        {
+          "id": "8cd4d36b-d1f8-40c9-9af7-c532415d6a7f",
+          "rawName": "láhev pilsl.urq.0.5L*",
+          "name": "láhev pilsl.urq.0.5L*",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 3,
+          "totalPrice": 9,
+          "discount": 0
+        },
+        {
+          "id": "3f0c8bf4-edf2-40d2-b48f-cee24cdd8026",
+          "rawName": "starobrno bitr 0,5L",
+          "name": "starobrno bitr 0,5L",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 13.9,
+          "totalPrice": 41.7,
+          "discount": 0
+        },
+        {
+          "id": "1f409b7a-e886-4fcf-8c23-2c3fc281c57c",
+          "rawName": "láhev pivo 0.5l",
+          "name": "láhev pivo 0.5l",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 3,
+          "totalPrice": 9,
+          "discount": 0
+        },
+        {
+          "id": "1a3140e7-a9c6-4470-b144-de9428c69966",
+          "rawName": "eg en. drink b.0,25l",
+          "name": "eg en. drink b.0,25l",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 9.9,
+          "totalPrice": 9.9,
+          "discount": 0
+        },
+        {
+          "id": "70c52a52-7f03-4fe4-8d64-6972df8330fe",
+          "rawName": "*alb toust. chléb sv",
+          "name": "*alb toust. chléb sv",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 29.9,
+          "totalPrice": 29.9,
+          "discount": 0
+        },
+        {
+          "id": "7e723741-fcbd-4991-919b-70e1232438b4",
+          "rawName": "sme.zakys.15% 375g",
+          "name": "sme.zakys.15% 375g",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 42.9,
+          "totalPrice": 42.9,
+          "discount": 0
+        }
+      ]
+    },
+    {
+      "id": "2dad7e2c-c832-4db1-8849-990c76f71dcf",
+      "createdAt": "2025-12-30T20:36:44.171Z",
+      "purchasedAt": "2025-12-30T00:00:00.000Z",
+      "store": "Unknown store",
+      "currency": "CZK",
+      "totals": {
+        "subtotal": 261.5,
+        "discount": 0,
+        "discountItems": 0,
+        "discountReceipt": 0,
+        "total": 261.5,
+        "paymentMethod": null
+      },
+      "items": [
+        {
+          "id": "7367a8d2-3dfc-450f-9baa-c9c5f9f93f7f",
+          "rawName": "ART VODA NEPERL.1,5L",
+          "name": "ART VODA NEPERL.1,5L",
+          "category": "other",
+          "quantity": 6,
+          "unit": "pcs",
+          "unitPrice": 6.9,
+          "totalPrice": 41.4,
+          "discount": 0
+        },
+        {
+          "id": "5e7e5a70-bcbf-4196-af1a-5f331e98cf8f",
+          "rawName": "pilsl.urq.ležák 0,5L",
+          "name": "pilsl.urq.ležák 0,5L",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 25.9,
+          "totalPrice": 77.7,
+          "discount": 0
+        },
+        {
+          "id": "83ab1450-a71e-4c1b-ad52-9c312112c903",
+          "rawName": "láhev pilsl.urq.0.5L*",
+          "name": "láhev pilsl.urq.0.5L*",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 3,
+          "totalPrice": 9,
+          "discount": 0
+        },
+        {
+          "id": "ffda8cb9-f16d-4b46-9f32-950f6eae7a27",
+          "rawName": "starobrno bitr 0,5L",
+          "name": "starobrno bitr 0,5L",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 13.9,
+          "totalPrice": 41.7,
+          "discount": 0
+        },
+        {
+          "id": "e0b8c076-b64d-4102-9d32-15597e480f81",
+          "rawName": "láhev pivo 0.5l",
+          "name": "láhev pivo 0.5l",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 3,
+          "totalPrice": 9,
+          "discount": 0
+        },
+        {
+          "id": "5b56e1e9-eef5-4c1d-9bcc-ef741262366e",
+          "rawName": "eg en. drink b.0,25l",
+          "name": "eg en. drink b.0,25l",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 9.9,
+          "totalPrice": 9.9,
+          "discount": 0
+        },
+        {
+          "id": "fbb08df2-8988-475f-bcb2-60097c140e2a",
+          "rawName": "*alb toust. chléb sv",
+          "name": "*alb toust. chléb sv",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 29.9,
+          "totalPrice": 29.9,
+          "discount": 0
+        },
+        {
+          "id": "59c57544-6441-4453-9caa-9701faea6656",
+          "rawName": "sme.zakys.15% 375g",
+          "name": "sme.zakys.15% 375g",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 42.9,
+          "totalPrice": 42.9,
+          "discount": 0
+        }
+      ]
+    },
+    {
+      "id": "839cb71f-cf21-40fc-99ca-3816649f9004",
+      "createdAt": "2025-12-30T20:27:23.510Z",
+      "purchasedAt": "2025-12-30T20:27:23.510Z",
+      "store": "Unknown store",
+      "currency": "CZK",
+      "totals": {
+        "subtotal": 261.5,
+        "discount": 89.7,
+        "discountItems": 89.7,
+        "discountReceipt": 0,
+        "total": 171.8,
+        "paymentMethod": null
+      },
+      "items": [
+        {
+          "id": "fb52fd0d-8e37-4a6b-a2f7-2e24186886f9",
+          "rawName": "ART VODA NEPERL.1,5L",
+          "name": "ART VODA NEPERL.1,5L",
+          "category": "other",
+          "quantity": 6,
+          "unit": "pcs",
+          "unitPrice": 6.9,
+          "totalPrice": 41.4,
+          "discount": 0
+        },
+        {
+          "id": "af5bcb2d-472f-4ff9-84cb-c4016036173e",
+          "rawName": "pilsl.urq.ležák 0,5L",
+          "name": "pilsl.urq.ležák 0,5L",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 25.9,
+          "totalPrice": 77.7,
+          "discount": 0
+        },
+        {
+          "id": "58ab2981-f45d-49f1-8a9d-9dee18841131",
+          "rawName": "láhev pilsl.urq.0.5L*",
+          "name": "láhev pilsl.urq.0.5L*",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 3,
+          "totalPrice": 9,
+          "discount": 0
+        },
+        {
+          "id": "be679ef6-9e1f-48c8-ae0d-46eeb15d8ae1",
+          "rawName": "starobrno bitr 0,5L",
+          "name": "starobrno bitr 0,5L",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 13.9,
+          "totalPrice": 41.7,
+          "discount": 0
+        },
+        {
+          "id": "3a03f950-d7f2-41c3-805d-42d33361f5ef",
+          "rawName": "láhev pivo 0.5l",
+          "name": "láhev pivo 0.5l",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 3,
+          "totalPrice": 9,
+          "discount": 0
+        },
+        {
+          "id": "e95f8e33-997b-44db-82f6-4962f92b6ab8",
+          "rawName": "eg en. drink b.0,25l",
+          "name": "eg en. drink b.0,25l",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 9.9,
+          "totalPrice": 9.9,
+          "discount": 0
+        },
+        {
+          "id": "c7e52fab-7c30-4c1c-bb29-dbb5ade2b832",
+          "rawName": "*alb toust. chléb sv",
+          "name": "*alb toust. chléb sv",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 29.9,
+          "totalPrice": 29.9,
+          "discount": 0
+        },
+        {
+          "id": "29968d08-7e8e-4416-a59b-dcc1e3718a28",
+          "rawName": "sme.zakys.15% 375g",
+          "name": "sme.zakys.15% 375g",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 42.9,
+          "totalPrice": 42.9,
+          "discount": 0
+        }
+      ]
+    },
+    {
+      "id": "7c341717-481e-482b-9689-d2a7b1f8e85e",
+      "createdAt": "2025-12-30T19:28:02.752Z",
+      "purchasedAt": "2025-12-30T19:28:02.750Z",
+      "store": "Unknown store",
+      "currency": "CZK",
+      "totals": {
+        "subtotal": 261.5,
+        "discount": 9,
+        "discountItems": 9,
+        "discountReceipt": 0,
+        "total": 252.5,
+        "paymentMethod": null
+      },
+      "items": [
+        {
+          "id": "e0c830f0-c440-465a-abca-dfc76cdb70e2",
+          "rawName": "ART VODA NEPERL.1,5L",
+          "name": "ART VODA NEPERL.1,5L",
+          "category": "other",
+          "quantity": 6,
+          "unit": "pcs",
+          "unitPrice": 0,
+          "totalPrice": 41.4,
+          "discount": 0
+        },
+        {
+          "id": "519ed190-ca36-409d-b59e-1a5f6c7cc69e",
+          "rawName": "pilsl.urq.ležák 0,5L",
+          "name": "pilsl.urq.ležák 0,5L",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pack",
+          "unitPrice": 0,
+          "totalPrice": 77.7,
+          "discount": 0
+        },
+        {
+          "id": "e59208fe-7739-422f-8757-f049440c30c2",
+          "rawName": "láhev pilsl.urq.0.5L*",
+          "name": "láhev pilsl.urq.0.5L*",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 0,
+          "totalPrice": 9,
+          "discount": 0
+        },
+        {
+          "id": "f7473549-cd57-423f-8f44-891aa2dbc4b7",
+          "rawName": "starobrno bitr 0,5L",
+          "name": "starobrno bitr 0,5L",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pack",
+          "unitPrice": 0,
+          "totalPrice": 41.7,
+          "discount": 0
+        },
+        {
+          "id": "06e48716-7e49-49a3-a1f9-9d7ab9f04a3f",
+          "rawName": "láhev pivo 0.5l",
+          "name": "láhev pivo 0.5l",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 0,
+          "totalPrice": 9,
+          "discount": 0
+        },
+        {
+          "id": "45e99eeb-0ea3-402f-8f36-cdb0410f1991",
+          "rawName": "eg en. drink b.0,25l",
+          "name": "eg en. drink b.0,25l",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pack",
+          "unitPrice": 0,
+          "totalPrice": 9.9,
+          "discount": 0
+        },
+        {
+          "id": "7e98b83d-807b-4b19-a87a-863ce9e2d6d4",
+          "rawName": "*alb toust. chléb sv",
+          "name": "*alb toust. chléb sv",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 0,
+          "totalPrice": 29.9,
+          "discount": 0
+        },
+        {
+          "id": "6bab5bb2-c581-4096-88fc-fdb6f18aec7f",
+          "rawName": "sme.zakys.15% 375g",
+          "name": "sme.zakys.15% 375g",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pack",
+          "unitPrice": 0,
+          "totalPrice": 42.9,
+          "discount": 0
+        }
+      ]
+    },
+    {
+      "id": "6f2ff6f1-ee33-4f91-b137-45e6c780a2fc",
+      "createdAt": "2025-12-30T19:07:18.159Z",
+      "purchasedAt": "2025-12-30T19:07:18.157Z",
+      "store": "Unknown store",
+      "currency": "Kč",
+      "totals": {
+        "subtotal": 261.5,
+        "discount": 0,
+        "total": 261.5,
+        "paymentMethod": null
+      },
+      "items": [
+        {
+          "id": "13b489c3-9862-44a8-becf-a268cc8aebfd",
+          "rawName": "ART VODA NEPERL.1,5L",
+          "name": "ART VODA NEPERL.1,5L",
+          "category": "other",
+          "quantity": 6,
+          "unit": "pcs",
+          "unitPrice": 0,
+          "totalPrice": 41.4,
+          "discount": 0
+        },
+        {
+          "id": "56ef1a54-21ca-4dc0-aa42-4b8faadcadf5",
+          "rawName": "pilsl.urq.ležák 0,5L",
+          "name": "pilsl.urq.ležák 0,5L",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pack",
+          "unitPrice": 0,
+          "totalPrice": 77.7,
+          "discount": 0
+        },
+        {
+          "id": "220ae6a0-7e30-4e14-804b-875ed1a6af74",
+          "rawName": "láhev pilsl.urq.0.5L*",
+          "name": "láhev pilsl.urq.0.5L*",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 0,
+          "totalPrice": 9,
+          "discount": 0
+        },
+        {
+          "id": "140dc78c-685d-4f7a-b4a6-f8121c45d0ac",
+          "rawName": "starobrno bitr 0,5L",
+          "name": "starobrno bitr 0,5L",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pack",
+          "unitPrice": 0,
+          "totalPrice": 41.7,
+          "discount": 0
+        },
+        {
+          "id": "61a361a8-8178-46ce-b313-01163a654ec8",
+          "rawName": "láhev pivo 0.5l",
+          "name": "láhev pivo 0.5l",
+          "category": "other",
+          "quantity": 3,
+          "unit": "pcs",
+          "unitPrice": 0,
+          "totalPrice": 9,
+          "discount": 0
+        },
+        {
+          "id": "e6f7ba00-6251-41a3-a048-5b5d248113c2",
+          "rawName": "eg en. drink b.0,25l",
+          "name": "eg en. drink b.0,25l",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pack",
+          "unitPrice": 0,
+          "totalPrice": 9.9,
+          "discount": 0
+        },
+        {
+          "id": "1de54d2f-e2bf-4fea-9a5f-c2c46aa791f2",
+          "rawName": "*alb toust. chléb sv",
+          "name": "*alb toust. chléb sv",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 0,
+          "totalPrice": 29.9,
+          "discount": 0
+        },
+        {
+          "id": "4e8296e5-ce76-443f-9d9d-60e4af6753bd",
+          "rawName": "sme.zakys.15% 375g",
+          "name": "sme.zakys.15% 375g",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pack",
+          "unitPrice": 0,
+          "totalPrice": 42.9,
+          "discount": 0
+        }
+      ]
+    },
+    {
+      "id": "73b6487e-d5d9-4fd2-8dc2-54f3277bec1b",
+      "createdAt": "2025-12-30T18:53:00.877Z",
+      "purchasedAt": "2025-12-30T18:53:00.875Z",
+      "store": "Unknown store",
+      "currency": "UAH",
+      "totals": {
+        "subtotal": 0,
+        "discount": 0,
+        "total": 0,
+        "paymentMethod": null
+      },
+      "items": []
+    },
+    {
+      "id": "76039ec1-a7f5-4d7d-9ab8-aa98aee80a2b",
+      "createdAt": "2025-12-30T18:49:12.789Z",
+      "purchasedAt": "2025-12-30T18:49:12.787Z",
+      "store": "Unknown store",
+      "currency": "UAH",
+      "totals": {
+        "subtotal": 0,
+        "discount": 0,
+        "total": 0,
+        "paymentMethod": null
+      },
+      "items": []
+    },
+    {
+      "id": "dd16b275-6772-40af-9549-497385507fe8",
+      "createdAt": "2025-12-30T18:33:42.539Z",
+      "purchasedAt": "2025-05-24T22:00:00.000Z",
+      "store": "НОВУС",
+      "currency": "UAH",
+      "totals": {
+        "subtotal": 383.17,
+        "discount": 63.86,
+        "total": 446.92,
+        "paymentMethod": "cash"
+      },
+      "items": [
+        {
+          "id": "1e943dbd-d4fe-4ef7-8d93-56e78c88ec6e",
+          "rawName": "Штрих код 4820084980168",
+          "name": "Саламі Золотиста NOVUS с/к в/с в/у",
+          "category": "grocery",
+          "quantity": 3,
+          "unit": "kg",
+          "unitPrice": 204,
+          "totalPrice": 612,
+          "discount": 0
+        },
+        {
+          "id": "fc44c860-8d8d-42e0-91b7-333476e19531",
+          "rawName": "Штрих код 2850123",
+          "name": "Капуста Пекінська ваг",
+          "category": "grocery",
+          "quantity": 0.342,
+          "unit": "kg",
+          "unitPrice": 64.99,
+          "totalPrice": 21.58,
+          "discount": 0
+        },
+        {
+          "id": "b35e23e2-2aa9-4ca3-bf4f-2d6025e24249",
+          "rawName": "Штрих код 2884824",
+          "name": "Сир 45% Мазаад Нідерланди брус ва г",
+          "category": "grocery",
+          "quantity": 0.552,
+          "unit": "kg",
+          "unitPrice": 64.99,
+          "totalPrice": 35.87,
+          "discount": 0
+        },
+        {
+          "id": "61f2c8e8-2300-41e3-84c8-a39709af2b58",
+          "rawName": "Картка № Ххххх0022471X",
+          "name": "Бонуси",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 3.83,
+          "totalPrice": 3.83,
+          "discount": 0
+        },
+        {
+          "id": "45306b16-32a8-4b83-b1b1-95d640617684",
+          "rawName": "Залишок",
+          "name": "Залишок",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 64.99,
+          "totalPrice": 64.99,
+          "discount": 0
+        },
+        {
+          "id": "30743793-3bb1-443c-96d5-45da6736f56d",
+          "rawName": "На початок",
+          "name": "На початок",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 35.87,
+          "totalPrice": 35.87,
+          "discount": 0
+        },
+        {
+          "id": "2d84e443-77d7-42b7-a61d-9479edb88843",
+          "rawName": "Купуй онлайн на novus.zakaz.ua",
+          "name": "Купуй онлайн на novus.zakaz.ua",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 35.87,
+          "totalPrice": 35.87,
+          "discount": 0
+        },
+        {
+          "id": "c2df5a9a-0cb3-4367-b3bc-a6ce50a0e1d5",
+          "rawName": "Приватбанк новус україна",
+          "name": "Приватбанк новус україна",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 35.87,
+          "totalPrice": 35.87,
+          "discount": 0
+        },
+        {
+          "id": "a90716c2-59b4-4f32-97d3-27e52b64a3b2",
+          "rawName": "Оплата",
+          "name": "Оплата",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 64.99,
+          "totalPrice": 64.99,
+          "discount": 0
+        },
+        {
+          "id": "40ac36c4-45ad-41ca-91de-3dd11ec4f636",
+          "rawName": "Епз хххххххххх7454",
+          "name": "Платіжна система: visa",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 38.26,
+          "totalPrice": 38.26,
+          "discount": 0
+        },
+        {
+          "id": "d4545ecd-36b2-48b1-87b8-65a2a18f8e94",
+          "rawName": "Код транз: 09747835501",
+          "name": "Код транз: 09747835501",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 6.2,
+          "totalPrice": 6.2,
+          "discount": 0
+        },
+        {
+          "id": "4a5f8448-502e-4525-8217-8d581466bb7a",
+          "rawName": "Код авт: 438781",
+          "name": "Код авт: 438781",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 6.2,
+          "totalPrice": 6.2,
+          "discount": 0
+        },
+        {
+          "id": "ceb0a9de-b18f-4e72-a845-5b4f9c2200c5",
+          "rawName": "Безготівкова картка",
+          "name": "Безготівкова картка",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 38.26,
+          "totalPrice": 38.26,
+          "discount": 0
+        },
+        {
+          "id": "dc85352d-16b7-4052-9534-b54f421b28ab",
+          "rawName": "Сума",
+          "name": "Сума",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 35.87,
+          "totalPrice": 35.87,
+          "discount": 0
+        },
+        {
+          "id": "76364f05-3737-40e3-a890-72e5be2e364a",
+          "rawName": "ПДВ А = 20.00%",
+          "name": "ПДВ А = 20.00%",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 63.86,
+          "totalPrice": 63.86,
+          "discount": 0
+        },
+        {
+          "id": "b670f735-fdcc-4c48-ade6-088eec907489",
+          "rawName": "Мік № 000190075 00066",
+          "name": "Мік № 000190075 00066",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 38.26,
+          "totalPrice": 38.26,
+          "discount": 0
+        },
+        {
+          "id": "10c3fba3-d166-4953-9935-cc17eb81c8d6",
+          "rawName": "QR code",
+          "name": "QR code",
+          "category": "other",
+          "quantity": 1,
+          "unit": "pcs",
+          "unitPrice": 0,
+          "totalPrice": 0,
+          "discount": 0
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "53953fad-f266-4ea3-876b-f14d6314a892",
+      "store": "НОВУС",
+      "rawName": "Штрих код 4820084980168",
+      "name": "Саламі Золотиста NOVUS с/к в/с в/у",
+      "category": "grocery",
+      "unit": "kg",
+      "lastPrice": 204,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 204,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "d76386e0-b590-41bb-b254-d932ec6b61ad",
+      "store": "НОВУС",
+      "rawName": "Штрих код 2850123",
+      "name": "Капуста Пекінська ваг",
+      "category": "grocery",
+      "unit": "kg",
+      "lastPrice": 64.99,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 64.99,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "bc7ddb90-665f-479e-a97f-11a8d125d328",
+      "store": "НОВУС",
+      "rawName": "Штрих код 2884824",
+      "name": "Сир 45% Мазаад Нідерланди брус ва г",
+      "category": "grocery",
+      "unit": "kg",
+      "lastPrice": 64.99,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 64.99,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "fd974f6a-621c-4773-b0e9-393db26678cb",
+      "store": "НОВУС",
+      "rawName": "Картка № Ххххх0022471X",
+      "name": "Бонуси",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 3.83,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 3.83,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "195c01ac-68c8-4112-a25a-ea199e77f17e",
+      "store": "НОВУС",
+      "rawName": "Залишок",
+      "name": "Залишок",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 64.99,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 64.99,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "8e6ac4d2-aa2b-4a1c-995c-7d45817c2229",
+      "store": "НОВУС",
+      "rawName": "На початок",
+      "name": "На початок",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 35.87,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 35.87,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "82517138-90ae-4a6d-8ca8-34061b12dad9",
+      "store": "НОВУС",
+      "rawName": "Купуй онлайн на novus.zakaz.ua",
+      "name": "Купуй онлайн на novus.zakaz.ua",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 35.87,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 35.87,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "302e2d7d-c6ee-4a98-8c44-763213fdf3e8",
+      "store": "НОВУС",
+      "rawName": "Приватбанк новус україна",
+      "name": "Приватбанк новус україна",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 35.87,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 35.87,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "c7672aca-ce61-4118-a036-395880c11159",
+      "store": "НОВУС",
+      "rawName": "Оплата",
+      "name": "Оплата",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 64.99,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 64.99,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "83d6dedf-dd78-4e32-9f4a-922cf72869bd",
+      "store": "НОВУС",
+      "rawName": "Епз хххххххххх7454",
+      "name": "Платіжна система: visa",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 38.26,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 38.26,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "ccf72f01-410c-4642-8a9a-7120499ab1d5",
+      "store": "НОВУС",
+      "rawName": "Код транз: 09747835501",
+      "name": "Код транз: 09747835501",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 6.2,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 6.2,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "a90226d8-8fac-4334-b1ce-1f823a608a44",
+      "store": "НОВУС",
+      "rawName": "Код авт: 438781",
+      "name": "Код авт: 438781",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 6.2,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 6.2,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "e5bf2c2e-a37e-491f-8e37-f7c5f7eee477",
+      "store": "НОВУС",
+      "rawName": "Безготівкова картка",
+      "name": "Безготівкова картка",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 38.26,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 38.26,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "a829e8f3-0817-4419-a14e-43ffa44cca3b",
+      "store": "НОВУС",
+      "rawName": "Сума",
+      "name": "Сума",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 35.87,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 35.87,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "d3d87617-fda2-4b90-b813-a5b50161b552",
+      "store": "НОВУС",
+      "rawName": "ПДВ А = 20.00%",
+      "name": "ПДВ А = 20.00%",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 63.86,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 63.86,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "c095cf74-bf1a-4049-b101-1ca0d8e17dd8",
+      "store": "НОВУС",
+      "rawName": "Мік № 000190075 00066",
+      "name": "Мік № 000190075 00066",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 38.26,
+      "priceHistory": [
+        {
+          "date": "2025-05-24T22:00:00.000Z",
+          "price": 38.26,
+          "receiptId": "dd16b275-6772-40af-9549-497385507fe8"
+        }
+      ]
+    },
+    {
+      "id": "83bea66d-248c-4e95-b8ff-f5e9de759a1b",
+      "store": "НОВУС",
+      "rawName": "QR code",
+      "name": "QR code",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 0,
+      "priceHistory": []
+    },
+    {
+      "id": "b468efed-53fe-4ad7-9954-4c31478f5d09",
+      "store": "Unknown store",
+      "rawName": "ART VODA NEPERL.1,5L",
+      "name": "ART VODA NEPERL.1,5L",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 6.9,
+      "priceHistory": [
+        {
+          "date": "2025-12-30T00:00:00.000Z",
+          "price": 6.9,
+          "receiptId": "2dad7e2c-c832-4db1-8849-990c76f71dcf"
+        }
+      ]
+    },
+    {
+      "id": "f83a8b8e-89dc-449b-aeb4-c6d839b97733",
+      "store": "Unknown store",
+      "rawName": "pilsl.urq.ležák 0,5L",
+      "name": "pilsl.urq.ležák 0,5L",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 25.9,
+      "priceHistory": [
+        {
+          "date": "2025-12-30T00:00:00.000Z",
+          "price": 25.9,
+          "receiptId": "2dad7e2c-c832-4db1-8849-990c76f71dcf"
+        }
+      ]
+    },
+    {
+      "id": "e3b33008-39aa-4c89-8d85-947fc3a1d77b",
+      "store": "Unknown store",
+      "rawName": "láhev pilsl.urq.0.5L*",
+      "name": "láhev pilsl.urq.0.5L*",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 3,
+      "priceHistory": [
+        {
+          "date": "2025-12-30T00:00:00.000Z",
+          "price": 3,
+          "receiptId": "2dad7e2c-c832-4db1-8849-990c76f71dcf"
+        }
+      ]
+    },
+    {
+      "id": "4fc2d3bc-2792-4e44-8d4c-6f5f74936176",
+      "store": "Unknown store",
+      "rawName": "starobrno bitr 0,5L",
+      "name": "starobrno bitr 0,5L",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 13.9,
+      "priceHistory": [
+        {
+          "date": "2025-12-30T00:00:00.000Z",
+          "price": 13.9,
+          "receiptId": "2dad7e2c-c832-4db1-8849-990c76f71dcf"
+        }
+      ]
+    },
+    {
+      "id": "66d9063d-4a99-4739-a45f-d9f1dd2d0cc1",
+      "store": "Unknown store",
+      "rawName": "láhev pivo 0.5l",
+      "name": "láhev pivo 0.5l",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 3,
+      "priceHistory": [
+        {
+          "date": "2025-12-30T00:00:00.000Z",
+          "price": 3,
+          "receiptId": "2dad7e2c-c832-4db1-8849-990c76f71dcf"
+        }
+      ]
+    },
+    {
+      "id": "067ca00a-52eb-4f40-b77a-94e9f9e211b7",
+      "store": "Unknown store",
+      "rawName": "eg en. drink b.0,25l",
+      "name": "eg en. drink b.0,25l",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 9.9,
+      "priceHistory": [
+        {
+          "date": "2025-12-30T00:00:00.000Z",
+          "price": 9.9,
+          "receiptId": "2dad7e2c-c832-4db1-8849-990c76f71dcf"
+        }
+      ]
+    },
+    {
+      "id": "4ddc9920-1a6f-4eee-9f61-5767c01ccd2d",
+      "store": "Unknown store",
+      "rawName": "*alb toust. chléb sv",
+      "name": "*alb toust. chléb sv",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 29.9,
+      "priceHistory": [
+        {
+          "date": "2025-12-30T00:00:00.000Z",
+          "price": 29.9,
+          "receiptId": "2dad7e2c-c832-4db1-8849-990c76f71dcf"
+        }
+      ]
+    },
+    {
+      "id": "0d59ce69-6f42-44f7-9357-4cead17738db",
+      "store": "Unknown store",
+      "rawName": "sme.zakys.15% 375g",
+      "name": "sme.zakys.15% 375g",
+      "category": "other",
+      "unit": "pcs",
+      "lastPrice": 42.9,
+      "priceHistory": [
+        {
+          "date": "2025-12-30T00:00:00.000Z",
+          "price": 42.9,
+          "receiptId": "2dad7e2c-c832-4db1-8849-990c76f71dcf"
+        }
+      ]
+    }
+  ]
+}
