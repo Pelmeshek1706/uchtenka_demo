@@ -5,7 +5,8 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  return NextResponse.json({ receipts: getReceipts() });
+  const receipts = getReceipts().map(({ imageDataUrl, scan, ...rest }) => rest);
+  return NextResponse.json({ receipts });
 }
 
 export async function POST(request: Request) {
