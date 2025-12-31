@@ -19,7 +19,8 @@ Create `.env.local` if needed:
 OCR_BASE_URL=http://127.0.0.1:1234
 OCR_MODEL=nanonets-ocr2-3b
 ```
-![Uploading image_2025-12-31_14-59-15.png…]()
+<img width="2520" height="1600" alt="image_2025-12-31_14-59-15" src="https://github.com/user-attachments/assets/91d2af2b-f47e-4a12-9a50-7263de24b2fe" />
+
 
 
 ## Data storage
