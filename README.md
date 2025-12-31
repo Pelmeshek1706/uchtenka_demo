@@ -1,6 +1,7 @@
 # Uchtenka
 
 Receipt-first budget tracker with OCR-driven parsing. Built with Next.js (React) and a local OCR model.
+<img width="1920" height="1600" alt="image_2025-12-31_14-59-39" src="https://github.com/user-attachments/assets/5c77cb87-97ad-4971-b8b2-7721fcf41f33" />
 
 ## Requirements
 - Node.js 18+ and npm
@@ -18,6 +19,8 @@ Create `.env.local` if needed:
 OCR_BASE_URL=http://127.0.0.1:1234
 OCR_MODEL=nanonets-ocr2-3b
 ```
+![Uploading image_2025-12-31_14-59-15.png…]()
+
 
 ## Data storage
 Data is stored in `data/db.json` (single-user).
