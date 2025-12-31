@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useLocale } from "@/components/LocaleProvider";
 import { formatDate, formatMoney } from "@/lib/format";
-import { categories, type Category, type Receipt } from "@/lib/types";
+import { categories, type Category, type OcrReceipt, type Receipt } from "@/lib/types";
 
 const unitOptions = ["pcs", "pack", "kg", "g", "l", "m"] as const;
 
@@ -90,6 +90,13 @@ function normalizeDateInput(value: string | null) {
     return parsed.toISOString().slice(0, 10);
   }
   return null;
+}
+
+function extractBase64FromDataUrl(dataUrl: string | null) {
+  if (!dataUrl) return null;
+  const commaIndex = dataUrl.indexOf(",");
+  if (commaIndex === -1) return null;
+  return dataUrl.slice(commaIndex + 1);
 }
 
 function createDraftFromOcr(raw: unknown): DraftReceipt {
@@ -217,6 +224,8 @@ export default function ScanPage() {
   const [isEditing, setIsEditing] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [draft, setDraft] = useState<DraftReceipt | null>(null);
+  const [scanData, setScanData] = useState<OcrReceipt | null>(null);
+  const [pendingScan, setPendingScan] = useState<OcrReceipt | null>(null);
   const [savedReceipt, setSavedReceipt] = useState<Receipt | null>(null);
   const [hasSaved, setHasSaved] = useState(false);
   const editReceiptId = searchParams.get("edit");
@@ -231,6 +240,11 @@ export default function ScanPage() {
     setIsLoading(true);
     setError(null);
     setDraft(null);
+    setScanData(null);
+    setPendingScan(null);
+    setPreviewUrl(null);
+    setImageBase64(null);
+    setFileName(null);
     setSavedReceipt(null);
     setHasSaved(false);
     setIsEditing(false);
@@ -239,7 +253,12 @@ export default function ScanPage() {
       .then((data) => {
         if (!isMounted) return;
         if (data?.receipt) {
-          setDraft(createDraftFromReceipt(data.receipt as Receipt));
+          const receipt = data.receipt as Receipt;
+          setDraft(createDraftFromReceipt(receipt));
+          setScanData(receipt.scan ?? null);
+          const storedImage = receipt.imageDataUrl ?? null;
+          setPreviewUrl(storedImage);
+          setImageBase64(extractBase64FromDataUrl(storedImage));
         } else {
           setError(t("scan.failure"));
         }
@@ -257,10 +276,14 @@ export default function ScanPage() {
 
   function handleFileChange(event: React.ChangeEvent<HTMLInputElement>) {
     setError(null);
-    setDraft(null);
     setSavedReceipt(null);
     setHasSaved(false);
-    setIsEditing(false);
+    setPendingScan(null);
+    if (!editReceiptId) {
+      setDraft(null);
+      setScanData(null);
+      setIsEditing(false);
+    }
     const file = event.target.files?.[0];
     if (!file) {
       setFileName(null);
@@ -279,12 +302,9 @@ export default function ScanPage() {
 
   async function handleAnalyze() {
     if (!imageBase64) return;
+    const hadDraft = Boolean(draft);
     setIsLoading(true);
     setError(null);
-    setDraft(null);
-    setSavedReceipt(null);
-    setHasSaved(false);
-    setIsEditing(false);
     try {
       const response = await fetch("/api/ocr", {
         method: "POST",
@@ -297,8 +317,14 @@ export default function ScanPage() {
       }
       const data = await response.json();
       const parsed = data?.draft ?? data?.receipt ?? data;
-      setDraft(createDraftFromOcr(parsed));
-      setIsEditing(false);
+      setScanData(parsed as OcrReceipt);
+      if (hadDraft) {
+        setPendingScan(parsed as OcrReceipt);
+      } else {
+        setDraft(createDraftFromOcr(parsed));
+        setPendingScan(null);
+        setIsEditing(false);
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : t("scan.failure"));
     } finally {
@@ -306,15 +332,33 @@ export default function ScanPage() {
     }
   }
 
+  function applyPendingScan() {
+    if (!pendingScan) return;
+    setDraft(createDraftFromOcr(pendingScan));
+    setScanData(pendingScan);
+    setPendingScan(null);
+    markDirty();
+  }
+
+  function discardPendingScan() {
+    setPendingScan(null);
+  }
+
   async function handleSave() {
     if (!draft) return;
     setIsSaving(true);
     setError(null);
     try {
+      const latestScan = pendingScan ?? scanData;
+      const payload = {
+        ...draft,
+        imageDataUrl: previewUrl ?? undefined,
+        scan: latestScan ?? undefined,
+      };
       const response = await fetch(editReceiptId ? `/api/receipts/${editReceiptId}` : "/api/receipts", {
         method: editReceiptId ? "PUT" : "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ receipt: draft }),
+        body: JSON.stringify({ receipt: payload }),
       });
       if (!response.ok) {
         const data = await response.json();
@@ -526,6 +570,19 @@ export default function ScanPage() {
         </div>
 
         <div className="surface flex h-full flex-col gap-6 p-6">
+          {pendingScan ? (
+            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-sm text-slate-600">
+              <p className="font-semibold text-slate-700">{t("scan.ocrReady")}</p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                <button className="button" type="button" onClick={applyPendingScan}>
+                  {t("scan.applyOcr")}
+                </button>
+                <button className="button secondary" type="button" onClick={discardPendingScan}>
+                  {t("scan.keepDraft")}
+                </button>
+              </div>
+            </div>
+          ) : null}
           {draft ? (
             isEditing ? (
               <>

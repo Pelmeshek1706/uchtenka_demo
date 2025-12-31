@@ -1,7 +1,31 @@
-import type { Product, Receipt } from "@/lib/types";
+import type { OcrReceipt, Product, Receipt } from "@/lib/types";
 import { readDb, writeDb } from "@/server/db";
 import { normalizeReceipt } from "@/server/normalize";
 import { createId } from "@/server/utils";
+
+function readOptionalString(value: unknown): string | null | undefined {
+  if (typeof value === "string") return value;
+  if (value === null) return null;
+  return undefined;
+}
+
+function readOptionalObject<T>(value: unknown): T | null | undefined {
+  if (value === null) return null;
+  if (typeof value === "object") return value as T;
+  return undefined;
+}
+
+function getImageDataUrl(raw: unknown): string | null | undefined {
+  if (!raw || typeof raw !== "object") return undefined;
+  const record = raw as Record<string, unknown>;
+  return readOptionalString(record.imageDataUrl ?? record["image_data_url"]);
+}
+
+function getScan(raw: unknown): OcrReceipt | null | undefined {
+  if (!raw || typeof raw !== "object") return undefined;
+  const record = raw as Record<string, unknown>;
+  return readOptionalObject<OcrReceipt>(record.scan);
+}
 
 export function getReceipts() {
   return readDb().receipts;
@@ -21,6 +45,8 @@ export function getProduct(id: string) {
 
 export function addReceiptFromOcr(raw: unknown): Receipt {
   const normalized = normalizeReceipt(raw);
+  const imageDataUrl = getImageDataUrl(raw);
+  const scan = getScan(raw);
   const receipt: Receipt = {
     id: createId(),
     createdAt: new Date().toISOString(),
@@ -29,6 +55,8 @@ export function addReceiptFromOcr(raw: unknown): Receipt {
     currency: normalized.currency,
     totals: normalized.totals,
     items: normalized.items,
+    imageDataUrl: imageDataUrl ?? null,
+    scan: scan ?? null,
   };
 
   const db = readDb();
@@ -40,6 +68,8 @@ export function addReceiptFromOcr(raw: unknown): Receipt {
 
 export function updateReceipt(id: string, raw: unknown): Receipt | null {
   const normalized = normalizeReceipt(raw);
+  const imageDataUrl = getImageDataUrl(raw);
+  const scan = getScan(raw);
   const db = readDb();
   const index = db.receipts.findIndex((receipt) => receipt.id === id);
   if (index === -1) return null;
@@ -52,6 +82,8 @@ export function updateReceipt(id: string, raw: unknown): Receipt | null {
     currency: normalized.currency,
     totals: normalized.totals,
     items: normalized.items,
+    imageDataUrl: imageDataUrl !== undefined ? imageDataUrl : existing.imageDataUrl ?? null,
+    scan: scan !== undefined ? scan : existing.scan ?? null,
   };
 
   db.receipts[index] = updated;

@@ -38,6 +38,8 @@ export type Receipt = {
   currency: string;
   totals: ReceiptTotals;
   items: ReceiptItem[];
+  imageDataUrl?: string | null;
+  scan?: OcrReceipt | null;
 };
 
 export type PricePoint = {
