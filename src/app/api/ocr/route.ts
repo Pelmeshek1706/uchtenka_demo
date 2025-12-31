@@ -6,12 +6,21 @@ export const dynamic = "force-dynamic";
 
 export async function POST(request: Request) {
   try {
-    const body = (await request.json()) as { imageBase64?: string };
+    const body = (await request.json()) as {
+      imageBase64?: string;
+      mimeType?: string;
+      model?: string;
+      flow?: string;
+    };
     if (!body?.imageBase64) {
       return NextResponse.json({ error: "Missing image" }, { status: 400 });
     }
 
-    const parsed = await OCR_service.analyzeReceipt(body.imageBase64);
+    const parsed = await OCR_service.analyzeReceipt(body.imageBase64, {
+      mimeType: body.mimeType,
+      model: body.model,
+      flow: body.flow,
+    });
     return NextResponse.json({ draft: parsed });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown error";

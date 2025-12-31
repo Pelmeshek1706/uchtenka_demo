@@ -8,6 +8,7 @@ import { formatDate, formatMoney } from "@/lib/format";
 import { categories, type Category, type OcrReceipt, type Receipt } from "@/lib/types";
 
 const unitOptions = ["pcs", "pack", "kg", "g", "l", "m"] as const;
+const ocrModelOptions = ["nanonets-ocr2-3b", "qwen/qwen3-vl-8b"] as const;
 
 type UnitOption = (typeof unitOptions)[number];
 
@@ -97,6 +98,12 @@ function extractBase64FromDataUrl(dataUrl: string | null) {
   const commaIndex = dataUrl.indexOf(",");
   if (commaIndex === -1) return null;
   return dataUrl.slice(commaIndex + 1);
+}
+
+function extractMimeTypeFromDataUrl(dataUrl: string | null) {
+  if (!dataUrl) return null;
+  const match = dataUrl.match(/^data:([^;]+);base64,/);
+  return match ? match[1] : null;
 }
 
 function createDraftFromOcr(raw: unknown): DraftReceipt {
@@ -218,7 +225,9 @@ export default function ScanPage() {
   const { t, locale } = useLocale();
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [imageBase64, setImageBase64] = useState<string | null>(null);
+  const [imageType, setImageType] = useState<string | null>(null);
   const [fileName, setFileName] = useState<string | null>(null);
+  const [ocrModel, setOcrModel] = useState<(typeof ocrModelOptions)[number]>("nanonets-ocr2-3b");
   const [isLoading, setIsLoading] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
@@ -244,6 +253,7 @@ export default function ScanPage() {
     setPendingScan(null);
     setPreviewUrl(null);
     setImageBase64(null);
+    setImageType(null);
     setFileName(null);
     setSavedReceipt(null);
     setHasSaved(false);
@@ -259,6 +269,7 @@ export default function ScanPage() {
           const storedImage = receipt.imageDataUrl ?? null;
           setPreviewUrl(storedImage);
           setImageBase64(extractBase64FromDataUrl(storedImage));
+          setImageType(extractMimeTypeFromDataUrl(storedImage));
         } else {
           setError(t("scan.failure"));
         }
@@ -290,6 +301,7 @@ export default function ScanPage() {
       return;
     }
     setFileName(file.name);
+    setImageType(file.type || null);
     const reader = new FileReader();
     reader.onload = () => {
       const result = reader.result as string;
@@ -303,13 +315,20 @@ export default function ScanPage() {
   async function handleAnalyze() {
     if (!imageBase64) return;
     const hadDraft = Boolean(draft);
+    const resolvedMimeType = imageType ?? extractMimeTypeFromDataUrl(previewUrl);
+    const flow = ocrModel === "qwen/qwen3-vl-8b" ? "vision" : "two-step";
     setIsLoading(true);
     setError(null);
     try {
       const response = await fetch("/api/ocr", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ imageBase64 }),
+        body: JSON.stringify({
+          imageBase64,
+          mimeType: resolvedMimeType ?? undefined,
+          model: ocrModel,
+          flow,
+        }),
       });
       if (!response.ok) {
         const data = await response.json();
@@ -550,6 +569,22 @@ export default function ScanPage() {
               <img src={previewUrl} alt="Receipt preview" className="w-full object-cover" />
             </div>
           ) : null}
+
+          <div className="mt-4">
+            <label className="text-xs font-medium text-slate-500">{t("scan.modelLabel")}</label>
+            <select
+              className="input mt-1"
+              value={ocrModel}
+              onChange={(event) => setOcrModel(event.target.value as (typeof ocrModelOptions)[number])}
+            >
+              {ocrModelOptions.map((model) => (
+                <option key={model} value={model}>
+                  {model}
+                </option>
+              ))}
+            </select>
+            <p className="mt-1 text-xs text-slate-400">{t("scan.modelHint")}</p>
+          </div>
 
           <button
             className="button mt-4 w-full sm:w-auto"

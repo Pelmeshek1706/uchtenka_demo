@@ -18,7 +18,11 @@ Create `.env.local` if needed:
 ```bash
 OCR_BASE_URL=http://127.0.0.1:1234
 OCR_MODEL=nanonets-ocr2-3b
+OCR_FLOW=two-step
+OCR_VLM_MODEL=qwen/qwen3-vl-8b
 ```
+
+`OCR_FLOW` supports `two-step` (OCR text -> JSON parser) or `vision` (direct image-to-JSON with a VLM).
 <img width="2520" height="1600" alt="image_2025-12-31_14-59-15" src="https://github.com/user-attachments/assets/91d2af2b-f47e-4a12-9a50-7263de24b2fe" />
 
 
